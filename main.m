@@ -23,7 +23,7 @@ Radar.InputNoiseTemperature	= 270;											% Noise Temp										- Kelvin(K)
 Radar.NoiseFigure						= 7;												% Noise Figure									- Decibles (dB)
 Radar.SystemLosses					= 3;												% System Loss										- Decibles (dB)
 Radar.AmbigousRange					= c/(Radar.PRF * 2);				% Ambigous Range								- Meters(m)
-Radar.PulseDuration					= 3 * Radar.Tau;						% Pulse Duration								- Seconds (s)
+Radar.PulseDuration					= 3 * Radar.Tau;						% Pulse Duration							- Seconds (s)
 Radar.NumberOfPulses				= 255;											% Number of Pulses							- Index (n)
 Radar.WaveformType					= 0;												% Waveform Type: 0 - Simple Pulse, 1 - ILFM
 
