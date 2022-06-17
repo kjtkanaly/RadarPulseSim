@@ -39,7 +39,7 @@ Radar.Vs					= 0;													% The beam steering Y position
 Radar.thetaPnt		= 0;													% The pointing angle from the X-Axis (Ground) - Degrees
 Radar.phiPnt			= 0;													% The pointing angle in the YZ axis					- Degrees
 Radar.taperType		= 0;													% The type of Array Illumination
-Radar.ScanAngle		= 1;												% Number of Scan Angles
+Radar.ScanAngle		= 1;													% Number of Scan Angles
 Radar.Amn					= ElementIllumination(Radar);	% The Array Illumination Array
 
 
