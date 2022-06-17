@@ -1,7 +1,7 @@
 %% Initializing Constants, Radar Parameters, Targets, and Results Structures 
 
 % Include White Noise in the Model
-noiseToggle			= true;		% 0 - None, 1 - Yup
+noiseToggle = true;		% 0 - None, 1 - Yup
 
 % Setup constants using Matlab's higher precision numbers
 c  = physconst('LightSpeed');	% Speed of Ligh			- Meters/Second (m/s)
