@@ -10,19 +10,19 @@ kb = physconst('Boltzmann');	% Boltzman Constant	- Joul/Kelvin (J/K)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Radar Parameters   
 Radar.TransmitPower					= 1*10^6;									% Transmit Power								- Watts (W)
-Radar.MaxGainTx							= 30;										% Transmit Antenna Gain					- Decibles (dB)
-Radar.MaxGainRx							= 30;										% Receive Antenna Gain					- Decibles (dB)
+Radar.MaxGainTx							= 30;											% Transmit Antenna Gain					- Decibles (dB)
+Radar.MaxGainRx							= 30;											% Receive Antenna Gain					- Decibles (dB)
 Radar.CenterFrequency				= 5*10^9;								    % Cenrer Frequency							- Hertz (Hz)
 Radar.CenterWavelength			= c/Radar.CenterFrequency;	% Center Wavelength							- Meters (m)
 Radar.Bandwidth							= 5*10^6;								% LFM Bandwidth								- Hertz (Hz)
 Radar.SampleTime						= 1/24e6;									% Time Resolution								- seconds (s)
-Radar.PRI									= Radar.SampleTime * 256;	% Pulse Rep Interval							- Seconds (s)
-Radar.PRF									= 1/Radar.PRI;						% Pulse Rep Frequency						- Hertz (Hz)
-Radar.Tau									= Radar.PRI / 127;					% Samples per PRI								- Seconds (s)
+Radar.PRI										= Radar.SampleTime * 256;	% Pulse Rep Interval							- Seconds (s)
+Radar.PRF										= 1/Radar.PRI;						% Pulse Rep Frequency						- Hertz (Hz)
+Radar.Tau										= Radar.PRI / 127;					% Samples per PRI								- Seconds (s)
 Radar.InputNoiseTemperature	= 270;										% Noise Temp										- Kelvin(K)
 Radar.NoiseFigure						= 7;											% Noise Figure									- Decibles (dB)
 Radar.SystemLosses					= 3;											% System Loss									- Decibles (dB)
-Radar.AmbigousRange				= c/(Radar.PRF * 2);				% Ambigous Range							- Meters(m)
+Radar.AmbigousRange					= c/(Radar.PRF * 2);				% Ambigous Range							- Meters(m)
 Radar.PulseDuration					= 3 * Radar.Tau;						% Pulse Duration								- Seconds (s)
 Radar.NumberOfPulses				= 255;										% Number of Pulses							- Index (n)
 Radar.WaveformType					= 0;											% Waveform Type: 0 - Simple Pulse, 1 - ILFM
@@ -30,8 +30,8 @@ Radar.WaveformType					= 0;											% Waveform Type: 0 - Simple Pulse, 1 - ILF
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Antenna Parameters
-Radar.ArrayDimX	= 10;											% Number of elements in the X-Dim
-Radar.ArrayDimY	= Radar.ArrayDimX*2;				% Number of elements in the Y-Dim, multipled by two to account for the triangular spacing
+Radar.ArrayDimX		= 10;											% Number of elements in the X-Dim
+Radar.ArrayDimY		= Radar.ArrayDimX*2;				% Number of elements in the Y-Dim, multipled by two to account for the triangular spacing
 Radar.dx					= 28.45e-3;									% Spacing between elements in the X-Dim
 Radar.dy					= 32.77e-3/2;								% Spacing between elements in the Y-Dim, divided by two to account for the triangular spacing
 Radar.Us					= 0;												% The beam steering X position
@@ -39,8 +39,8 @@ Radar.Vs					= 0;												% The beam steering Y position
 Radar.thetaPnt		= 0;												% The pointing angle from the X-Axis (Ground) - Degrees
 Radar.phiPnt			= 0;												% The pointing angle in the YZ axis					- Degrees
 Radar.taperType		= 0;												% The type of Array Illumination
-Radar.ScanAngle	= 1;												% Number of Scan Angles
-Radar.Amn				= ElementIllumination(Radar);	% The Array Illumination Array
+Radar.ScanAngle		= 1;												% Number of Scan Angles
+Radar.Amn					= ElementIllumination(Radar);	% The Array Illumination Array
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
