@@ -10,8 +10,8 @@ kb = physconst('Boltzmann');	% Boltzman Constant	- Joul/Kelvin (J/K)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Radar Parameters   
 Radar.TransmitPower					= 1*10^6;									% Transmit Power								- Watts (W)
-Radar.MaxGainTx						= 30;										% Transmit Antenna Gain					- Decibles (dB)
-Radar.MaxGainRx						= 30;										% Receive Antenna Gain					- Decibles (dB)
+Radar.MaxGainTx							= 30;										% Transmit Antenna Gain					- Decibles (dB)
+Radar.MaxGainRx							= 30;										% Receive Antenna Gain					- Decibles (dB)
 Radar.CenterFrequency				= 5*10^9;								    % Cenrer Frequency							- Hertz (Hz)
 Radar.CenterWavelength			= c/Radar.CenterFrequency;	% Center Wavelength							- Meters (m)
 Radar.Bandwidth							= 5*10^6;								% LFM Bandwidth								- Hertz (Hz)
