@@ -30,15 +30,15 @@ Radar.WaveformType					= 0;												% Waveform Type: 0 - Simple Pulse, 1 - IL
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Antenna Parameters
-Radar.ArrayDimX		= 10;											% Number of elements in the X-Dim
-Radar.ArrayDimY		= Radar.ArrayDimX*2;				% Number of elements in the Y-Dim, multipled by two to account for the triangular spacing
-Radar.dx					= 28.45e-3;									% Spacing between elements in the X-Dim
-Radar.dy					= 32.77e-3/2;								% Spacing between elements in the Y-Dim, divided by two to account for the triangular spacing
-Radar.Us					= 0;												% The beam steering X position
-Radar.Vs					= 0;												% The beam steering Y position
-Radar.thetaPnt		= 0;												% The pointing angle from the X-Axis (Ground) - Degrees
-Radar.phiPnt			= 0;												% The pointing angle in the YZ axis					- Degrees
-Radar.taperType		= 0;												% The type of Array Illumination
+Radar.ArrayDimX		= 10;													% Number of elements in the X-Dim
+Radar.ArrayDimY		= Radar.ArrayDimX*2;					% Number of elements in the Y-Dim, multipled by two to account for the triangular spacing
+Radar.dx					= 28.45e-3;										% Spacing between elements in the X-Dim
+Radar.dy					= 32.77e-3/2;									% Spacing between elements in the Y-Dim, divided by two to account for the triangular spacing
+Radar.Us					= 0;													% The beam steering X position
+Radar.Vs					= 0;													% The beam steering Y position
+Radar.thetaPnt		= 0;													% The pointing angle from the X-Axis (Ground) - Degrees
+Radar.phiPnt			= 0;													% The pointing angle in the YZ axis					- Degrees
+Radar.taperType		= 0;													% The type of Array Illumination
 Radar.ScanAngle		= 1;												% Number of Scan Angles
 Radar.Amn					= ElementIllumination(Radar);	% The Array Illumination Array
 
